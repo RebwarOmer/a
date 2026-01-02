@@ -12,3 +12,7 @@ proxychains4 firefox
 
 
 sudo nano /etc/proxychains4.conf
+
+
+F5B7-WZ84-RFYK-VLEA-4LQS
+cocewi7086@hudisk.com
