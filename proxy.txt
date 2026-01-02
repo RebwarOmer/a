@@ -16,3 +16,14 @@ sudo nano /etc/proxychains4.conf
 
 F5B7-WZ84-RFYK-VLEA-4LQS
 cocewi7086@hudisk.com
+
+if it didnt work
+
+
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://archive.kali.org/archive-key.asc | sudo gpg --dearmor -o /etc/apt/keyrings/kali-archive-keyring.gpg
+
+sudo sed -i 's|deb http://http.kali.org/kali|deb [signed-by=/etc/apt/keyrings/kali-archive-keyring.gpg] http://http.kali.org/kali|' /etc/apt/sources.list
+
+sudo apt update
+sudo apt install tor
