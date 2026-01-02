@@ -27,3 +27,12 @@ sudo sed -i 's|deb http://http.kali.org/kali|deb [signed-by=/etc/apt/keyrings/ka
 
 sudo apt update
 sudo apt install tor
+
+sudo systemctl start tor
+sudo systemctl status tor
+
+
+https://check.torproject.org
+
+
+proxychains curl https://ifconfig.me
