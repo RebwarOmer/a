@@ -1,0 +1,46 @@
+##-Nmap Scan Types
+1. Ping Scan (-sP): to only know whether the target is alive or not.
+Ex: nmap –sP 192.168.1.10
+2. TCP SYN Scan (-sS): it uses to scan the services which are run on the target.
+Ex: nmap –sS 192.168.1.10
+3. Version Detection Scan (-sV): to know the versions of the services of the target.
+Ex: nmap –sS sV 192.168.1.10
+4. Protocol Scan (-O): to know the protocols, which are supported on the target.
+Ex: nmap –O 192.168.1.10
+5. ACK Scan (-sA): to know if the target is protected by a firewall or not, (filtered or unfiltered). 
+Ex: nmap –sA 192.168.1.109
+6. Firewall Scan 2 (-PN): to scan a target which is protected by the firewall.
+Ex: nmap –PN 192.168.1.109
+7. Open Ports Scan (- - open): to scan and show only the open ports of the target.
+Ex: nmap - - open 192.168.1.109
+8. Idle Scan (-sI): in this scan, Nmap doesn’t send the packets from your real IP address.
+It uses another machine to send the packets.
+Ex: nmap –sI 192.168.1.10 192.168.1.9
+9. Scan specific ports:
+Ex: nmap -p 22,80,443 192.168.1.10
+Ex: nmap -p 1-1000 www.google.com
+10. TCP connect scan:
+Ex: nmap -sT 192.168.1.2
+11. UDP scan:
+Ex: -sU 192.168.1.2
+---------------------------
+
+##-Timing and performance
+1. Timing template (0–5; 5 fastest)
+Ex: nmap-T4 192.168.1.1
+→ -T0 very slow/stealthy, -T5 fastest (noisy).
+2. Reduce retries / speed up
+Ex: nmap --min-rate 1000 192.168.1.1
+→ Force a minimum packet rate (use carefully).
+---------------------------
+##-Traceroute & network mapping
+1. Perform traceroute to targets
+Ex: nmap --traceroute 192.168.1.1
+→ Shows path hops along with scan.
+---------------------------
+
+##-Full Scan
+1. UDP + TCP full scan (slow, thorough):
+nmap -sS -sU -p-www.facebook.com
+→ scans all 65535 ports.
+

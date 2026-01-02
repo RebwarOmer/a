@@ -1,0 +1,14 @@
+sudo apt update
+
+sudo apt install proxychains4
+
+sudo apt install tor
+
+sudo service tor start
+
+sudo service tor status
+
+proxychains4 firefox
+
+
+sudo nano /etc/proxychains4.conf

