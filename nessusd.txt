@@ -1,0 +1,25 @@
+1. sudo su
+
+2. cd downloads
+
+3. https://www.tenable.com/downloads/nessus
+
+4. sudo dpkg -i Nessus-10.7.1-debian1_amd64.deb
+
+5. start nessusd.service
+
+6. https://kali:8834
+
+7. continue
+
+8. register for nessus essenrials
+
+9. continue
+
+10. f/lname + email 
+
+11. sudo systemctl start nessusd.service
+
+12. https://kali:8834/
+
+
